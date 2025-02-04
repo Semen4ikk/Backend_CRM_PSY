@@ -14,9 +14,9 @@ class Exercise(models.Model):
 
 class ClientCard(models.Model):
     name = models.CharField(max_length=100)
-    contact = models.IntegerField(max_length=11)
+    contact = models.IntegerField()
     email = models.CharField(max_length=255)
-    passport_number = models.IntegerField(max_length=11)
+    passport_number = models.IntegerField()
     description = models.TextField()
 
     def __str__(self):
